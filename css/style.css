@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    height: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: black;
+}
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.clock{
+    font-size: 32px;
+    text-shadow: -1px 0px 15px yellow;
+    color: black;
+}
+.number{
+    display: inline-block;
+    width: 140px;
+    font-size: 128px;
+    text-align: center;
+    text-shadow: -1px 0px 15px yellow;
+    border: none;
+    color: white;
+    background-color: black;
+}
+.buttons button{
+    margin: 0 7px;
+    padding: 40px;
+    border: none;
+    border-radius: 50%;
+}
+#play{
+    background-image: url('https://raw.githubusercontent.com/DevelopeandoHub/TimerJS/master/img/play.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#stop{
+    background-image: url('https://raw.githubusercontent.com/DevelopeandoHub/TimerJS/master/img/stop.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#play:active{
+    background-color: green;
+}
+#stop:active{
+    background-color: red;
+}
